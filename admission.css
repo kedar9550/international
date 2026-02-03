@@ -1,4 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+.img-border-wrap {
+    display: block;
+    padding: 6px;
+    border-radius: 15px;
+    position: relative;
+    width: 92%; 
+     max-width: 100%;
+     margin: 0 auto;
+}
+
+/* Animated gradient border */
+.img-border-wrap::before {
+    
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border-radius: 15px;
+    padding: 1.5px;
+
+    background: linear-gradient(var(--angle), #00428A, #f05819, #ffffff, #00428A);
+    animation: rotateBorder 6s linear infinite;
+
+    z-index: -1;
+}
+
+/* Image */
+.img-border-wrap img {
+    display: block;
+    border-radius: 10px;
+}
+
+/* Animate the gradient angle */
+@keyframes rotateBorder {
+    0%   { --angle: 0deg; }
+    100% { --angle: 360deg; }
+}
+
+
+/* Image should also scale */
+.img-border-wrap img {
+    width: 100%;
+    height: auto;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .img-border-wrap {
+        width: 85%;
+        margin: 0 auto;   /* center if any extra space */
+    }
+}
+
+
 
 
 .placement_note {
