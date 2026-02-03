@@ -1,4 +1,54 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Section background */
+.background-page {
+     background-image: url("./images/gd1.png")!important;
+    color: white;
+    font-family: poppins !important;
+
+}
+
+/* Padding control */
+.py55 {
+    padding: 50px 20px;
+}
+
+/* Main heading */
+.headingmain {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: poppins !important;
+}
+
+/* Subheading */
+.text-22 {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #dce9ff;
+}
+
+/* Paragraph */
+.content-admission {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+    font-weight: 300;
+}
+
+/* Content box */
+.content-section {
+    max-width: 500px;
+    margin: auto;
+}
+
+
+
+
+
+
 .img-border-wrap {
     display: block;
     padding: 6px;
